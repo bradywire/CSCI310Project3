@@ -1,0 +1,15 @@
+/workspaces/CSCI310Project3/SinglePlayerBattleship/bin/Debug/net8.0/SinglePlayerBattleship
+/workspaces/CSCI310Project3/SinglePlayerBattleship/bin/Debug/net8.0/SinglePlayerBattleship.deps.json
+/workspaces/CSCI310Project3/SinglePlayerBattleship/bin/Debug/net8.0/SinglePlayerBattleship.runtimeconfig.json
+/workspaces/CSCI310Project3/SinglePlayerBattleship/bin/Debug/net8.0/SinglePlayerBattleship.dll
+/workspaces/CSCI310Project3/SinglePlayerBattleship/bin/Debug/net8.0/SinglePlayerBattleship.pdb
+/workspaces/CSCI310Project3/SinglePlayerBattleship/obj/Debug/net8.0/SinglePlayerBattleship.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/CSCI310Project3/SinglePlayerBattleship/obj/Debug/net8.0/SinglePlayerBattleship.AssemblyInfoInputs.cache
+/workspaces/CSCI310Project3/SinglePlayerBattleship/obj/Debug/net8.0/SinglePlayerBattleship.AssemblyInfo.cs
+/workspaces/CSCI310Project3/SinglePlayerBattleship/obj/Debug/net8.0/SinglePlayerBattleship.csproj.CoreCompileInputs.cache
+/workspaces/CSCI310Project3/SinglePlayerBattleship/obj/Debug/net8.0/SinglePlayerBattleship.sourcelink.json
+/workspaces/CSCI310Project3/SinglePlayerBattleship/obj/Debug/net8.0/SinglePlayerBattleship.dll
+/workspaces/CSCI310Project3/SinglePlayerBattleship/obj/Debug/net8.0/refint/SinglePlayerBattleship.dll
+/workspaces/CSCI310Project3/SinglePlayerBattleship/obj/Debug/net8.0/SinglePlayerBattleship.pdb
+/workspaces/CSCI310Project3/SinglePlayerBattleship/obj/Debug/net8.0/SinglePlayerBattleship.genruntimeconfig.cache
+/workspaces/CSCI310Project3/SinglePlayerBattleship/obj/Debug/net8.0/ref/SinglePlayerBattleship.dll
