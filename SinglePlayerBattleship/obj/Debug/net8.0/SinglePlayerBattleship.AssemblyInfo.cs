@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SinglePlayerBattleship")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+713176655f15902ac1120ea1544430d5ecce033f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8be099e7d57e9109d121538dd4de3ea0f796565")]
 [assembly: System.Reflection.AssemblyProductAttribute("SinglePlayerBattleship")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SinglePlayerBattleship")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

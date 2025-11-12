@@ -12,18 +12,19 @@ namespace BattleshipGame
 
     class Game
     {
+        private int BOARD_SIZE = 10;
         private char[,] board;
         private List<int> shipSizes;
         private List<Ship> ships;
         private Random rand;
         private int cursorX;
         private int cursorY;
-        int misses;
-        int shipsSunk;
-        int totalHitsNeeded;
-        int hits;
-        bool gameRunning;
-        bool gameWon;
+        private int misses;
+        private int shipsSunk;
+        private int totalHitsNeeded;
+        private int hits;
+        private bool gameRunning;
+        private bool gameWon;
 
         public Game()
         {
@@ -33,7 +34,7 @@ namespace BattleshipGame
         private void InitializeGame()
         {
             // Initialize the hidden board (10x10 grid)
-            board = new char[10, 10]; // Defaults to '\0' for empty cells
+            board = new char[BOARD_SIZE, BOARD_SIZE]; // Defaults to '\0' for empty cells
 
             // List of ship sizes: Carrier(5), Battleship(4), Cruiser(3), Submarine(3), Destroyer(2)
             shipSizes = new List<int> { 5, 4, 3, 3, 2 };
@@ -65,8 +66,8 @@ namespace BattleshipGame
                 bool placed = false;
                 while (!placed)
                 {
-                    int row = rand.Next(10);
-                    int col = rand.Next(10);
+                    int row = rand.Next(BOARD_SIZE);
+                    int col = rand.Next(BOARD_SIZE);
                     bool horizontal = rand.Next(2) == 0;
 
                     if (CanPlaceShip(row, col, size, horizontal))
@@ -98,7 +99,7 @@ namespace BattleshipGame
         {
             if (horizontal)
             {
-                if (col + size > 10) return false;
+                if (col + size > BOARD_SIZE) return false;
                 for (int i = 0; i < size; i++)
                 {
                     if (board[row, col + i] != '\0') return false;
@@ -106,7 +107,7 @@ namespace BattleshipGame
             }
             else
             {
-                if (row + size > 10) return false;
+                if (row + size > BOARD_SIZE) return false;
                 for (int i = 0; i < size; i++)
                 {
                     if (board[row + i, col] != '\0') return false;
@@ -119,11 +120,11 @@ namespace BattleshipGame
         {
             Console.Clear();
             Console.WriteLine("  1 2 3 4 5 6 7 8 9 10");
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < BOARD_SIZE; i++)
             {
                 char rowLabel = (char)('A' + i);
                 Console.Write(rowLabel);
-                for (int j = 0; j < 10; j++)
+                for (int j = 0; j < BOARD_SIZE; j++)
                 {
                     if (cursorX == j && cursorY == i)
                     {
@@ -185,19 +186,47 @@ namespace BattleshipGame
                     switch (key.Key)
                     {
                         case ConsoleKey.UpArrow:
-                            cursorY--;
+                            if (cursorY - 1 < 0)
+                            {
+                                cursorY = BOARD_SIZE - 1;
+                            }
+                            else
+                            {
+                                cursorY--;
+                            }
                             DisplayBoard();
                             break;
                         case ConsoleKey.DownArrow:
-                            cursorY++;
+                            if (cursorY + 1 > BOARD_SIZE - 1)
+                            {
+                                cursorY = 0;
+                            }
+                            else
+                            {
+                                cursorY++;
+                            }
                             DisplayBoard();
                             break;
                         case ConsoleKey.LeftArrow:
-                            cursorX--;
+                            if (cursorX - 1 < 0)
+                            {
+                                cursorX = BOARD_SIZE - 1;
+                            }
+                            else
+                            {
+                                cursorX--;
+                            }
                             DisplayBoard();
                             break;
                         case ConsoleKey.RightArrow:
-                            cursorX++;
+                            if (cursorX + 1 > BOARD_SIZE - 1)
+                            {
+                                cursorX = 0;
+                            }
+                            else
+                            {
+                                cursorX++;
+                            }
                             DisplayBoard();
                             break;
                         case ConsoleKey.Enter:
