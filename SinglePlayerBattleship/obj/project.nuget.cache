@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "0ca8vaDexls=",
+  "dgSpecHash": "f8SfgRZ+FKg=",
   "success": true,
-  "projectFilePath": "/workspaces/CSCI310Project3/SinglePlayerBattleship/SinglePlayerBattleship.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\wireb\\F2025\\CSCI310\\CSCI-310_Project_3\\CSCI310Project3\\SinglePlayerBattleship\\SinglePlayerBattleship.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wireb\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.22\\microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\wireb\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.22\\microsoft.windowsdesktop.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\wireb\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.22\\microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\wireb\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.22\\microsoft.netcore.app.host.win-x64.8.0.22.nupkg.sha512"
+  ],
   "logs": []
 }
